@@ -1,0 +1,183 @@
+@import "./normalize.css";
+
+:root {
+  --first-color: #8D8741;
+  --second-color: #659DBD;
+  --third-color: #DAAD86;
+  --fourth-color: #BC986A;
+  --fifth-color: #FBEEC1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 20px;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 12px 0;
+  z-index: 2; 
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav {
+  
+}
+
+.nav-item {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.weather {
+  display: flex;
+  column-gap: 15px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.banner {
+  margin-bottom: 120px;
+  /* max-height: 600px; */
+}
+
+.banner-img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 0 0 64px 64px;
+}
+
+.destination {
+  margin-bottom: 120px;
+
+}
+
+.all-title {
+  margin-bottom: 20px;
+}
+
+.title-1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.destination-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.card-location {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  &:hover {
+    color: var(--second-color);
+    cursor: pointer;
+  }
+}
+
+.regions {
+  margin-bottom: 120px;
+}
+
+.regions-cards {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about {
+  margin-bottom: 120px;
+}
+
+.about-card {
+  display: flex;
+  column-gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.about-img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+}
+
+.footer {
+  margin-top: 20px;
+  height: 50px;
+  background-color: var(--third-color);
+}
